@@ -20,12 +20,14 @@ export function FilterRow() {
             suffix={<MdSearch />}
           />
           <div className='mode'>
-            <MdViewModule 
+            <MdViewModule
+              className='left'
               onClick={() => setCurrentMode('grid')} 
               style={currentMode === 'grid' ? selectedStyle : normalStyle} 
             />
             <div className='divider'></div>
-            <HiViewList 
+            <HiViewList
+              className='right' 
               onClick={() => setCurrentMode('list')} 
               style={currentMode === 'list' ? selectedStyle : normalStyle}
             />

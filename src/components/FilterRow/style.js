@@ -16,10 +16,17 @@ export const FilterRowContainer = styled.div`
             border: 1px solid #2A409C;
             height: 36px;
             width: 120px;
+            .left {
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
+            }
+            .right {
+                border-top-right-radius: 2px;
+                border-bottom-right-radius: 2px;
+            }
             svg {
                 width: 100%;
                 height: 100%;
-                border-radius: 2px;
                 cursor: pointer;
             }
             .divider {
